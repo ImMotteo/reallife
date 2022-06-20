@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Real Life</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+
+<body>
+    <header>
+        <div class="header_container">
+            <div class="header_navigation">
+                <a href="#">Бесплатные тренинги</a>
+                <a href="#">Вебинары</a>
+                <a href="#">Статьи</a>
+               
+            </div>
+
+            <div class="header_text">
+                <span class="header_title">Real Life</span>
+                <span class="header_person">Елена Астахова</span>
+                <span class="header_description">Вебинары, тренинги, статьи!</span>
+
+            </div>
+
+            <span class="header_arrow" onclick="slowScroll('.person')"><img src="img/service/arrow.png" width="30px" height="30px"></span>
+
+        </div>
+
+        <main>
+
+            <div id="menu" class="hide">
+                <div id="menu-bar" onclick="menuOnClick()">
+                  <div id="bar1" class="bar"></div>
+                  <div id="bar2" class="bar"></div>
+                  <div id="bar3" class="bar"></div>
+                </div>
+                <nav class="nav" id="nav">
+                  <ul>
+                    <li onclick="slowScroll('.person')">Обо мне</li>
+                    <li onclick="slowScroll('.advantages')">Почему я?</li>
+                    <li onclick="slowScroll('.articles')">Статьи</li>
+                    <li onclick="slowScroll('.webinars')">Вебинары</li>
+                    <li onclick="slowScroll('.feedback')">Обратная связь</li>
+                  </ul>
+                </nav> 
+              </div>
+              
+              <div class="menu-bg hide" id="menu-bg"></div>
+
+            <section id="person">
+                <div class="person">
+                
+                    <div class="person_photo"></div>
+                    <span class="person_title"><h2>Елена Астахова</h2></span>
+                    
+                    <span class="person_description">
+                        <p>"Адьювантс" Психологическая тренинг-студия.</p>
+                        <br>
+                        <p>Консультации, тренинги, лекции, семинары</p>
+                    </span>
+
+                    <div class="person_contacts">
+                        <h2>Контакты:</h2>
+                        <a class="my_link" href="tel:+79217971210">+79217971210</a>
+                        <a class="my_link" href="mailto:roklas@mail.ru">roklas@mail.ru</a>
+
+                        <div class="person_soshial">
+                            <a href="https://vk.com/astahova.elena"><img src="img/social/vkontakte.png" width="48px"></a>
+                            <a href="#"><img src="img/social/instagram.png" width="48px"></a>
+                            <a href="https://www.youtube.com/channel/UCBmi6K7E3MC-1qRPSSpSE0Q"><img src="img/social/youtube.png" width="48px"></a>
+
+                        </div>
+    
+
+                    </div>
+                
+                </div>
+                </section>
+
+                <section id="advantages">
+                    <div class="advantages">
+                        <h2>Почему стоит обратиться именно ко мне?</h2>
+                        <br>
+                        <p>Обращаясь ко мне, Вы получаете:</p>
+
+                        <div class="advantages_items">
+
+                            <div class="item item1">
+                                <img src="img/advantages/advantages_star.png" max-height="64px">
+
+                                <div class="item_text">
+                                    <h3>Квалифицированного специалиста</h3>
+                                    <p>Текст... <span class="qualification_more my_link" onclick="showQualification()">Подробнее</p>
+                                </div>
+                               
+                            </div>
+
+                            <div class="advantages_qualification hide">
+
+                                <div class="qualification_docs qualification_doc1">
+                                    <img src="img/person/person_photo.jpg" widht="100px" height="200px">
+                                    <p>Этот документ является удостоверением того, что...</p>
+                                </div>
+
+                                <div class="qualification_docs qualification_doc1">
+                                    <img src="img/person/person_photo.jpg" widht="100px" height="200px">
+                                    <p>Этот документ является удостоверением того, что...</p>
+                                </div>
+
+                                <div class="qualification_docs qualification_doc1">
+                                    <img src="img/person/person_photo.jpg" widht="100px" height="200px">
+                                    <p>Этот документ является удостоверением того, что...</p>
+                                </div>
+
+                                <div class="qualification_docs qualification_doc1">
+                                    <img src="img/person/person_photo.jpg" widht="100px" height="200px">
+                                    <p>Этот документ является удостоверением того, что...</p>
+                                </div>
+
+                            </div>
+
+                            <div class="item item2">
+                                <img src="img/advantages/advantages_feedback.png" max-height="64px">
+
+                                <div class="item_text">
+                                    <h3>Обратную связь</h3>
+                                    <p>Быстрый и точный ответ по любому интересующему Вас вопросу.</p>
+                                </div>
+                            </div>
+
+                            <div class="item item3">
+                                <img src="img/advantages/advantages_person.png" max-height="64px">
+
+                                <div class="item_text">
+                                    <h3>Индивидуальный поход</h3>
+                                    <p>Не существует два однозначно идентичных случая и для каждого из них необходимо искать персональный подход.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+            
+                </section>
+
+                <section id="articles">
+
+                    <div class="articles">
+                        <h2>Популярные статьи</h2>
+                        <div class="article_area">
+                            
+                            <div class="article article1">
+                                <img class="article_img" src="img/article/article1.jpg" width="300px" height="300px">
+                                <h3 class="article_title">Заголовок статьи</h3>
+                                <p class="article_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae feugiat arcu, 
+                                    fringilla pharetra ante. Cras ultrices viverra eleifend. Aliquam sed ante facilisis 
+                                    elit facilisis accumsan. Mauris eget dignissim enim, bibendum pulvinar lectus. 
+                                    Curabitur est odio, aliquet nec varius a, iaculis non nibh. 
+                                    Proin egestas vel arcu non tincidunt.</p>
+                                    <a class="article_full my_link" href="#">Читать полностью...</a>
+                            </div>
+
+                            <div class="article article2">
+                                <img class="article_img" src="img/article/article2.jpg" width="300px" height="300px">
+                                <h3 class="article_title">Заголовок статьи</h3>
+                                <p class="article_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae feugiat arcu, 
+                                    fringilla pharetra ante. Cras ultrices viverra eleifend. Aliquam sed ante facilisis 
+                                    elit facilisis accumsan. Mauris eget dignissim enim, bibendum pulvinar lectus. 
+                                    Curabitur est odio, aliquet nec varius a, iaculis non nibh. 
+                                    Proin egestas vel arcu non tincidunt.</p>
+                                    <a class="article_full my_link" href="#">Читать полностью...</a>
+                            </div>
+
+                            <div class="article article3">
+                                <img class="article_img" src="img/article/article3.jpg" width="300px" height="300px">
+                                <h3 class="article_title">Заголовок статьи</h3>
+                                <p class="article_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vitae feugiat arcu, 
+                                    fringilla pharetra ante. Cras ultrices viverra eleifend. Aliquam sed ante facilisis 
+                                    elit facilisis accumsan. Mauris eget dignissim enim, bibendum pulvinar lectus. 
+                                    Curabitur est odio, aliquet nec varius a, iaculis non nibh. 
+                                    Proin egestas vel arcu non tincidunt.</p>
+                                    <a class="article_full my_link" href="#">Читать полностью...</a>
+                            </div>
+                       
+
+                        </div>
+                        <a href="articles.html"><button class="article_more">Смотреть все</button></a>
+
+                    </div>
+                    
+                
+                </section>
+
+                <section id="webinars">
+                    <div class="webinars">
+                        <h2 class="webinar_title">Бесплатные вебинары</h2>
+                        <div class="webinars_area">
+
+                            <div class="webinar webinar1">
+                                <video class="vid" src="video/Депрессия.mp4" poster="img/webinars/превью.png" width="560" height="315" controls loop muted></video>
+                                <p class="webinars_description">Поговорим о том, что такое депрессия, о различных методах лечения и всё такое.</p>
+
+                            </div>
+
+                            <div class="webinar webinar2">
+                                <video class="vid" src="video/Депрессия.mp4" poster="img/webinars/превью.png" width="560" height="315" controls loop muted></video>
+
+                                <p class="webinars_description">Поговорим о том, что такое депрессия, о различных методах лечения и всё такое.</p>
+
+                            </div>
+
+                        </div>
+                        <a href="#"><button class="article_more">Смотреть все</button></a>
+                    </div>
+                </section>
+
+        </main>
+
+        <section id="feedback">
+            <div class="feedback">
+                <h2 class="feedback_title">Запишитесь на консультацию</h2>
+                </div>
+            <form class="form" id="form">
+                <input type="text" name="name" class="feedback_input _req" placeholder="Имя" id="name" required>
+                <input type="email" name="email" class="_email feedback_input _req" placeholder="Email" id="email" required>
+                <textarea name="text" id="comment" placeholder="Опишите проблему" class="feedback_input"></textarea>
+                <input type="checkbox" name="feedback-agree" class="feedback_input _req" checked>
+                <p>Я соласен(на) на обработку персональных данных</p>
+                <button type="submit" class="button-submit">Отправить</button>
+                <div class="ease"></div>
+            </div>
+
+        </section>
+
+
+    </header>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
