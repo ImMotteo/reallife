@@ -93,9 +93,10 @@ body{
 }
 
    .articles_area {
-
+    height: auto;
     width: 100%;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     margin: auto;
    }
@@ -163,9 +164,9 @@ body{
     padding: 30px;
     left: 5%;
     width: 10%;
-    top: 10vh;
+    top: 3vh;
     min-width: 450px;
-    max-height: 850px;
+    max-height: 100vh;
     width: 90%;
     margin: auto;
     border-radius: 10px;
@@ -247,4 +248,96 @@ body{
 
 .counter{
     margin-left: 10px;
+}
+
+
+.sidebar {
+  height: 100%;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.sidebar > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.sidebar h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top: -30px;
+}
+
+.main-slide {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 65%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.main-slide > div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+}
+
+button {
+  background-color: #fff;
+  border: none;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px;
+}
+
+button:hover {
+  color: #222;
+}
+
+button:focus {
+  outline: none;
+}
+
+.container .controls button {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  z-index: 100;
+}
+
+.container .controls .down-button {
+  transform: translateX(-100%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.container .controls .up-button {
+  transform: translateY(-100%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+.search_title {
+  width: 100%;
+  font-size: 25px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.tag {
+  color: rgb(21, 129, 133);
+  text-decoration: underline;
 }

@@ -1,6 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600&display=swap');
 
 
+
+html{
+
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 body{
  font-size: 14px;
  font-family: 'Nunito', sans-serif;
@@ -8,7 +16,20 @@ body{
  margin: 0;
  padding: 0;
 
+
+
+
 }
+
+body::-webkit-scrollbar {
+    width: 5px;               /* ширина scrollbar */
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: #088d65;    /* цвет плашки */
+    border-radius: 20px;       /* закругления плашки */
+    border: 3px solid rgba(185, 185, 185, 0.089);  /* padding вокруг плашки */
+  }
 
 *,
 *:before,
@@ -19,7 +40,7 @@ body{
 h1, h2, h3, h4, h5, h6{
     padding: 0;
     margin: 0;
-    color:#000;
+
 }
 
 h3 {
@@ -40,12 +61,12 @@ a {
 /*---------- HEADER ----------*/
 
 header {
-    box-sizing: border-box;
+   box-sizing: border-box;
 }
 
 .header_container {
     position: relative;
-    width: 99vw;
+    width: 100vw;
     height: 100vh;
 
     background-image: linear-gradient(rgba(85, 32, 90, 0.7), rgba(0, 0, 0, 0.8)), url('../img/header/header_background.jpg');
@@ -167,7 +188,7 @@ header {
     width: 100%;
     margin: 0 auto;
     text-align: center;
-    color: #000;
+
     padding-top: 5px;
 
 }
@@ -286,7 +307,9 @@ header {
 }
 
 .person_contacts {
-    margin-top: 30px;
+    width: 80%;
+    margin: 30px auto 0 auto;
+    text-align: center;
 }
 
 .person_contacts h2 {
@@ -301,10 +324,11 @@ header {
 }
 
 .person_soshial {
-    margin: 20px auto;
+    margin: 50px auto 0 auto;
     display: flex;
     width: 15%;
     justify-content: space-around;
+    filter: invert(100%);
 }
 
 .person_soshial a:hover {
@@ -580,6 +604,7 @@ header {
  }
  
  .button-submit {
+    font-family: 'Nunito', sans-serif;
      display: block;
     margin: 0 auto 20px auto;
     box-sizing: content-box;
@@ -604,3 +629,123 @@ header {
      border: none;
      box-shadow: 0 0 15px red;
  }
+
+ .agree {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+ }
+
+
+ .agree input {
+    width: 5%;
+ }
+ /*---------- MARATHONS ----------*/
+
+ .container {
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    
+  }
+
+  .marathons_title {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .sidebar {
+    height: 100%;
+    width: 35%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .sidebar > div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+  
+  .sidebar h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: -30px;
+    color: rgb(0, 0, 0);
+  }
+
+  .sidebar p{
+    font-size: 18px;
+    margin: 0 50px;
+  }
+  
+  .main-slide {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    width: 65%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .main-slide > div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  button {
+    background-color: #fff;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px;
+  }
+  
+  button:hover {
+    color: #222;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  .container .controls button {
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    z-index: 100;
+  }
+  
+  .container .controls .down-button {
+    transform: translateX(-100%);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+  
+  .container .controls .up-button {
+    transform: translateY(-100%);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  /*---------- FOOTER----------*/
+
+  .footer {
+    width: 100%;
+    text-align: center;
+    background-color: #111;
+    color: white;
+    height: auto;
+  }
